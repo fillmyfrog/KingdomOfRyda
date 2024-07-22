@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+header {
+    background-color: #0B0B0B;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    user-select: none
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.sec-link {
+    color: #ffffff42;
+}
+
+.sec-link:hover {
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #1B1B1B;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.version-match {
+    background-color: rgba(0, 128, 0, 0.39);
+}
+
+.version-mismatch {
+    background-color: rgba(255, 0, 0, 0.466);
+}
+
+.button-active {
+    background-color: blue;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.63);
+}
+
+.card img {
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.card .text {
+    background-color: #3B3B3B;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.card .title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card .description {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #7777775d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.version {
+    margin: 10px;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card button {
+    background-color: #777;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #999;
+}
+
+.card .button-full {
+    margin: 10px;
+    padding: -15px;
+    background-color: #3B3B3B;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.card .button-full img {
+    width: 50px;
+}
+
+.button-full:hover {
+    background-color: #999;
+}
+
+.buttons-sec {
+    display: flex;
+}
+
+/* Estilos para a barra de rolagem personalizada */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem vertical */
+    height: 12px;
+    /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-track {
+    background: #1B1B1B;
+    /* Cor do fundo da barra de rolagem */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444;
+    /* Cor da barra de rolagem */
+    border-radius: 10px;
+    border: 3px solid #1B1B1B;
+    /* Espaço entre a barra de rolagem e o track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Cor da barra de rolagem ao passar o mouse */
+}

@@ -1,0 +1,46 @@
+.accordion {
+    width: 10%;
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+    background-color: #555;
+}
+
+.accordion-content {
+    display: none;
+    /* Inicialmente escondida */
+    flex-direction: column;
+    gap: 10px;
+    width: 10%;
+    /* Mesmo tamanho do botão do acordeão */
+}
+
+.accordion-content button {
+    margin-bottom: 2px;
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordion-content button:hover {
+    background-color: #555;
+}

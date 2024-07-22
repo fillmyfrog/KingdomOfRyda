@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Kingdom Of Ryda - Drive</title>
+    <link rel="stylesheet" href="Link CSS/link-styles.css">
+    <link rel="stylesheet" href="Link CSS/linksearchbar.css">
+    <link rel="stylesheet" href="Link CSS/link-styles-hover.css">
+    <link rel="shortcut icon" href="Icon/Favicon/MalcLogo(Official).png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>KINGDOM OF RYDA</h1>
+        <main>
+            <a href="index.html">
+                <h2 class="sec-link">Mods</h2>
+            </a>
+            <h2>•</h2>
+            <h2 class="main-link">Drive</h2>
+        </main>
+    </header>
+
+    <input type="text" id="search-bar" placeholder="Pesquisar Arquivos..." onkeyup="searchFiles()">
+
+    <div class="drive-container">
+
+        <!-- 1.20.4 -->
+        <div class="folder" onclick="toggleFolder('folder1')">
+            <img src="Icon/DriveIcon/Folder.png" alt="Folder Icon">
+            <span>1.20.4</span>
+        </div>
+
+        <!-- 1.20.6 -->
+        <div class="folder" onclick="toggleFolder('folder2')">
+            <img src="Icon/DriveIcon/Folder.png" alt="Folder Icon">
+            <span>1.20.6</span>
+        </div>
+
+        <!-- 1.21 -->
+        <div class="folder" onclick="toggleFolder('folder3')">
+            <img src="Icon/DriveIcon/Folder.png" alt="Folder Icon">
+            <span>1.21</span>
+        </div>
+    </div>
+
+    <!-- 1.20.4 -->
+    <div id="folder1" class="folder-content">
+
+        <div class="title">
+            <h3 class="vers">1.20.4</h3>
+            <h3 class="downloads">Downloads</h3>
+        </div>
+        <div class="navigation-buttons">
+            <button class="nav-button-ghost">←</button>
+            <button class="back-button" onclick="showAllFolders()">Voltar</button>
+            <button class="nav-button" onclick="toggleFolder('folder2')">→</button>
+        </div>
+
+        <a href="https://drive.google.com/drive/folders/1X2Ax_Dfjka-eqAp_G4vq7UjPi_D_ydzx?usp=drive_link"
+            target="_blank"><button class="file-downloadall">
+                <img src="Icon/DriveIcon/Download.png" alt="File Icon">
+            </button></a>
+        <button class="file">
+            <img src="Icon/DriveIcon/Jar.png" alt="File Icon">
+            <span>A</span>
+        </button>
+        <button class="file">
+            <img src="Icon/DriveIcon/Jar.png" alt="File Icon">
+            <span>B</span>
+        </button>
+    </div>
+
+    <!-- 1.20.6 -->
+    <div id="folder2" class="folder-content">
+
+        <div class="title">
+            <h3 class="vers">1.20.6</h3>
+            <h3 class="downloads">Downloads</h3>
+        </div>
+        <div class="navigation-buttons">
+            <button class="nav-button" onclick="toggleFolder('folder1')">←</button>
+            <button class="back-button" onclick="showAllFolders()">Voltar</button>
+            <button class="nav-button" onclick="toggleFolder('folder3')">→</button>
+        </div>
+
+        <a href=""><button class="file-downloadall">
+                <img src="Icon/DriveIcon/Download.png" alt="File Icon">
+            </button></a>
+        <button class="file">
+            <img src="Icon/DriveIcon/Jar.png" alt="File Icon">
+            <span>C</span>
+        </button>
+        <button class="file">
+            <img src="Icon/DriveIcon/Jar.png" alt="File Icon">
+            <span>D</span>
+        </button>
+    </div>
+
+    <!-- 1.21 -->
+    <div id="folder3" class="folder-content">
+
+        <div class="title">
+            <h3 class="vers">1.21</h3>
+            <h3 class="downloads">Downloads</h3>
+        </div>
+        <div class="navigation-buttons">
+            <button class="nav-button" onclick="toggleFolder('folder2')">←</button>
+            <button class="back-button" onclick="showAllFolders()">Voltar</button>
+            <button class="nav-button-ghost">←</button>
+        </div>
+
+        <button class="file-downloadall">
+            <img src="Icon/DriveIcon/Download.png" alt="File Icon">
+        </button>
+        <button class="file">
+            <img src="Icon/DriveIcon/Jar.png" alt="File Icon">
+            <span>E</span>
+        </button>
+        <button class="file">
+            <img src="Icon/DriveIcon/Jar.png" alt="File Icon">
+            <span>F</span>
+        </button>
+    </div>
+
+    <script src="linkscript.js"></script>
+</body>
+
+</html>
