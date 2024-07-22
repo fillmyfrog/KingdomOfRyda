@@ -1,0 +1,20 @@
+.file:hover {
+    background-color: grey;
+}
+
+.back-button:hover {
+    background-color: grey;
+}
+
+.nav-button:hover {
+    background-color: grey;
+}
+
+.folder:hover {
+    transition: 1s;
+    background-color: gray;
+}
+
+.file-downloadall:hover {
+    background-color: rgba(0, 65, 0, 0.726);
+}
